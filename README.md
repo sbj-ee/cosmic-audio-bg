@@ -11,9 +11,13 @@ Audio-reactive animated desktop background for **Pop!_OS 24.04 COSMIC**.
 
 Renders WGSL shaders on a Wayland layer-shell background surface, driven by real-time FFT analysis of the default audio monitor (`@DEFAULT_MONITOR@` via PipeWire/Pulse).
 
-![cosmic-audio-bg rendering the composite waveform](docs/screenshot.png)
+![cosmic-audio-bg rendering the composite waveform](docs/composite.png)
 
 *`composite` mode: a single glowing wave that is the superposition of all 16 FFT-band sinusoids.*
+
+![cosmic-audio-bg rendering the stripes visualization](docs/stripes.png)
+
+*`stripes` mode (default): 16 horizontal stripes, one continuous sinusoid per FFT band.*
 
 ## Quick start
 
