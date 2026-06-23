@@ -1,0 +1,6 @@
+# Rust build artifacts
+/target
+
+# Debug screenshots / image dumps
+*.ppm
+screenshot-*.png

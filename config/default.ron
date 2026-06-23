@@ -1,0 +1,16 @@
+(
+    shader_path: "shaders/sinusoids.wgsl",
+    fps_ac: 60,
+    fps_battery: 30,
+    audio_sensitivity: 1.0,
+    idle_energy_threshold: 0.02,
+    idle_seconds: 3.0,
+    output: all,
+    // Visualization mode: `stripes` (one sinusoid per FFT band, default) or
+    // `composite` (a single wave that is the superposition of all 16 bands).
+    visualization: stripes,
+    power: (
+        reduce_fps_on_battery: true,
+        pause_on_lid_closed: true,
+    ),
+)

@@ -1,0 +1,12 @@
+[package]
+name = "cosmic-audio-bg-config"
+description = "Configuration types for cosmic-audio-bg"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dirs = "6"
+ron.workspace = true
+serde.workspace = true
+anyhow.workspace = true

@@ -1,0 +1,19 @@
+[Unit]
+Description=Audio-reactive animated desktop background for COSMIC
+After=graphical-session.target pipewire.service pipewire-pulse.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c 'systemctl --user stop com.system76.CosmicBackground.service 2>/dev/null || true'
+ExecStart=%h/.local/bin/cosmic-audio-bg --config %h/.config/cosmic-audio-bg/config.ron
+Restart=on-failure
+RestartSec=3
+Environment=RUST_LOG=cosmic_audio_bg=info
+Environment=COSMIC_AUDIO_BG_ROOT=%h/cosmic-audio-bg
+
+# Stop stock cosmic-bg while this service runs (see install-service.sh)
+Environment=WAYLAND_DISPLAY=wayland-1
+
+[Install]
+WantedBy=graphical-session.target

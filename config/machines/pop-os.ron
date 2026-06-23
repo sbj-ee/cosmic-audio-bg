@@ -1,0 +1,6 @@
+(
+    shader_path: "/home/stevebj/.local/share/cosmic-audio-bg/shaders/sinusoids.wgsl",
+    fps_ac: 60,
+    fps_battery: 30,
+    audio_sensitivity: 1.0,
+)

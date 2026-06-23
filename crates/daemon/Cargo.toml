@@ -1,0 +1,31 @@
+[package]
+name = "cosmic-audio-bg"
+description = "Audio-reactive animated desktop background for Pop!_OS COSMIC"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "cosmic-audio-bg"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+bytemuck.workspace = true
+clap.workspace = true
+cosmic-audio-bg-audio = { path = "../audio" }
+cosmic-audio-bg-config = { path = "../config" }
+image.workspace = true
+pollster.workspace = true
+ron.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+wgpu.workspace = true
+
+calloop = "0.14"
+smithay-client-toolkit = { version = "0.20", default-features = false, features = [
+    "calloop",
+    "xkbcommon",
+] }
+
+[dev-dependencies]
