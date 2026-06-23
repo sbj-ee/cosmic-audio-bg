@@ -1,5 +1,12 @@
 # cosmic-audio-bg
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
+![Wayland](https://img.shields.io/badge/Wayland-layer--shell-1793D1?logo=wayland&logoColor=white)
+![COSMIC](https://img.shields.io/badge/COSMIC-Pop!__OS%2024.04-48B9C7)
+![wgpu](https://img.shields.io/badge/wgpu-WGSL-FF4154)
+![PipeWire](https://img.shields.io/badge/PipeWire-FFT-2D8CFF)
+
 Audio-reactive animated desktop background for **Pop!_OS 24.04 COSMIC**.
 
 Renders WGSL shaders on a Wayland layer-shell background surface, driven by real-time FFT analysis of the default audio monitor (`@DEFAULT_MONITOR@` via PipeWire/Pulse).
