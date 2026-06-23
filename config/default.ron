@@ -8,7 +8,7 @@
     output: all,
     // Visualization mode: `stripes` (one sinusoid per FFT band, default) or
     // `composite` (a single wave that is the superposition of all 16 bands).
-    visualization: stripes,
+    visualization: composite,
     power: (
         reduce_fps_on_battery: true,
         pause_on_lid_closed: true,
